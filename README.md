@@ -1,4 +1,6 @@
-Playing with React and Ramda
+## Playing with React and Ramda
+
+Trying out https://medium.com/let-s-learn/lets-learn-composing-react-components-with-ramda-5db457997554
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
