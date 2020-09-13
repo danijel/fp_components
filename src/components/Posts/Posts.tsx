@@ -14,14 +14,14 @@ const Posts: FC<Props> = ({ posts }) => (
           <h2>{title}</h2>
           <p>{text}</p>
         </div>
-        {comments && <h3 className='comments-title'>Comments</h3>}
+        {comments && <h3>Comments</h3>}
         {comments &&
           comments.map(
             ({ id: commentId, text: commentText, author, replies }) => (
               <div className='comment-row' key={commentId}>
                 <p>{commentText}</p>
                 <h5>{author}</h5>
-                {replies && <h4 className='replies-title'>Replies</h4>}
+                {replies && <h4>Replies</h4>}
                 {replies &&
                   replies.map(
                     ({ id: replyId, text: replyText, author: replyAuthor }) => (
