@@ -6,27 +6,33 @@ interface Props {
   posts: Post[]
 }
 
-
 const Posts: FC<Props> = ({ posts }) => (
   <div>
-    <div className='row'>
-      {posts.map(({ id, title }) => (
-        <h2 key={id}>{title}</h2>
-      ))}
-    </div>
-    <div className='row'>
-      {posts.map(({ id, comments }) => (
-        <div key={id}>
-          <h2>Comments</h2>
-          {comments.map(comment => (
-            <div key={comment.id}>
-              <p>{comment.text}</p>
-              <h5>{comment.author}</h5>
+    {posts.map(({ id, title, comments }) => (
+      <div key={id}>
+        <div className='row'>
+          <h2>{title}</h2>
+        </div>
+        {comments && <h3 className='comments-title'>Comments</h3>}
+        {comments &&
+          comments.map(({ id: commentId, text, author, replies }) => (
+            <div className='comment-row' key={commentId}>
+              <p>{text}</p>
+              <h5>{author}</h5>
+              {replies && <h4 className='replies-title'>Replies</h4>}
+              {replies &&
+                replies.map(
+                  ({ id: replyId, text: replyText, author: replyAuthor }) => (
+                    <div className='reply-row' key={replyId}>
+                      <p>{replyText}</p>
+                      <h5>{replyAuthor}</h5>
+                    </div>
+                  ),
+                )}
             </div>
           ))}
-        </div>
-      ))}
-    </div>
+      </div>
+    ))}
   </div>
 )
 

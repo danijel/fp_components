@@ -1,3 +1,41 @@
 .row {
   border-bottom: 1px solid grey;
+  padding: 20px;
+}
+
+p{
+  margin: 0.5rem 0;
+}
+.comments-title {
+  background-color: rgb(248, 224, 193);
+  border-bottom: 1px solid floralwhite;
+  margin: 0;
+  padding: 1rem 0;
+}
+.comment-row {
+  border-bottom: 1px solid grey;
+  background-color: antiquewhite;
+  padding: 10px 0 0;
+}
+
+.replies-title{
+  background-color: aliceblue;
+  border-bottom: 1px solid floralwhite;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.reply-row {
+  background-color: aliceblue;
+  padding: 10px 0;
+}
+.comment-row h5, .reply-row h5{
+   margin: 5px 15px 5px;
+   text-align: right;
+}
+.comment-row h5{
+  background-color: antiquewhite;
+}
+.reply-row h5{
+  background-color: aliceblue;
 }
