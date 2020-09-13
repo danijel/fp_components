@@ -5,6 +5,7 @@ export const DEMO_POSTS: Post[] = [
   {
     id: random.uuid(),
     title: lorem.words(),
+    text: lorem.paragraph(3),
     comments: [
       {
         id: random.uuid(),
@@ -40,6 +41,7 @@ export const DEMO_POSTS: Post[] = [
   {
     id: random.uuid(),
     title: lorem.words(),
+    text: lorem.paragraph(3),
     comments: [
       {
         id: random.uuid(),

@@ -11,12 +11,12 @@ describe('Posts', () => {
   it('renders all posts and comments', () => {
     const { getByText } = subject()
     DEMO_POSTS.forEach(post => {
-      const { title, comments } = post
+      const { title, text, comments } = post
       expect(getByText(title)).toBeInTheDocument()
-      expect(getByText(title)).toBeInTheDocument()
+      expect(getByText(text)).toBeInTheDocument()
       if (comments) {
-        comments.forEach(({ text, author, replies }) => {
-          expect(getByText(text)).toBeInTheDocument()
+        comments.forEach(({ text: commentText, author, replies }) => {
+          expect(getByText(commentText)).toBeInTheDocument()
           expect(getByText(author)).toBeInTheDocument()
           if (replies) {
             replies.forEach(({ text: replyText, author: replyAuthor }) => {
