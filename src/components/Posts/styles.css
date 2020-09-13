@@ -6,7 +6,7 @@
 p{
   margin: 0.5rem 0;
 }
-.comments-title {
+h3 {
   background-color: rgb(248, 224, 193);
   border-bottom: 1px solid floralwhite;
   margin: 0;
@@ -18,7 +18,7 @@ p{
   padding: 10px 0 0;
 }
 
-.replies-title{
+h4{
   background-color: aliceblue;
   border-bottom: 1px solid floralwhite;
   margin: 0;
