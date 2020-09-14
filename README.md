@@ -1,6 +1,18 @@
 ## Playing with React and Ramda
 
-Trying out https://medium.com/let-s-learn/lets-learn-composing-react-components-with-ramda-5db457997554
+Reading this article prompted this play with react and ramda
+
+https://medium.com/let-s-learn/lets-learn-composing-react-components-with-ramda-5db457997554
+
+From what is in the article I've added some more complexity to the posts fixtures data and typing with typescript in strict mode.
+
+Typing ramda is hard :-) (at least for me)
+
+`main` branch is starting point, everything rendered in single map run over all posts.
+
+`fp-refactor` branch is my attempt to learn something and have a little fun with [Ramda](https://ramdajs.com/)
+
+Test is very crude, just covers that what is in the fixtures is rendered.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
