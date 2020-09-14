@@ -6,6 +6,12 @@
   height: 4vmin;
   pointer-events: none;
 }
+.Ramda-logo {
+  height: 3vmin;
+  pointer-events: none;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -14,10 +20,10 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: grey;
   min-height: 10vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
